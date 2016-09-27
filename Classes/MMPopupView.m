@@ -28,6 +28,18 @@ static NSString * const MMPopupViewHideAllNotification = @"MMPopupViewHideAllNot
     return self;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    
+    if ( self )
+    {
+        [self setup];
+    }
+    
+    return self;
+}
+
 - (void)setup
 {
     self.type = MMPopupTypeAlert;
