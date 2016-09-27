@@ -335,7 +335,7 @@ static NSString * const MMPopupViewHideAllNotification = @"MMPopupViewHideAllNot
                                  make.center.equalTo(self.attachedView).centerOffset(CGPointMake(0, self.withKeyboard?-216/2:0));
                              }];
                              
-                             [self layoutIfNeeded];
+                             [self.superview layoutIfNeeded];
                              
                          } completion:^(BOOL finished) {
                              
